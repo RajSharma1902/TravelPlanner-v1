@@ -6,7 +6,7 @@ from gemini import Gemini
 import spacy
 
 # Load the spaCy model for NLP
-nlp = spacy.load("en_core_web_sm")
+# nlp = spacy.load("en_core_web_sm")
 
 if 'counter' not in st.session_state:
     st.session_state['counter'] = 0
@@ -17,16 +17,16 @@ if 'model' not in st.session_state:
 if 'response' not in st.session_state:
     st.session_state["response"] = ""
 
-def extract_locations(text):
-    if isinstance(text, dict):
-        text = "".join(f"{t}" for t in text.values())
+# def extract_locations(text):
+#     if isinstance(text, dict):
+#         text = "".join(f"{t}" for t in text.values())
 
-    locations = {}
-    doc = nlp(text)
-    for ent in doc.ents:
-        if ent.label_ == "GPE":  # Geopolitical entity (location)
-            locations[ent.text] = True  # Placeholder for location extraction
-    return locations
+#     locations = {}
+#     doc = nlp(text)
+#     for ent in doc.ents:
+#         if ent.label_ == "GPE":  
+#             locations[ent.text] = True  
+#     return locations
 
 def main():
     session_state = st.session_state
@@ -75,9 +75,19 @@ def main():
         response = {}
         
         if st.session_state["generate_button_clicked"]:
-            with open(r'/Users/rajnarayansharma/Desktop/InternShip/Prompt/ModelResponse/gemini_answer.json', 'r', encoding="utf-8") as file:
-                response = json.load(file)
-                st.session_state["response"] = response
+                response_file_path = os.path.join(os.getcwd(), "gemini_answer.json")  # File in the current working directory
+                # Check if the file exists
+                if os.path.exists(response_file_path):
+                    # Open and load the JSON response
+                    with open(response_file_path, 'r', encoding="utf-8") as file:
+                        response = json.load(file)
+                        # Save the response in session state
+                        st.session_state["response"] = response
+                        # Optionally, display the response in the app
+                        # st.write("Generated Trip Plan:")
+                        # st.json(response)
+                else:
+                    st.error("Response file not found. Please ensure the trip plan was generated.")
 
         current_day = f"Day {st.session_state['counter'] + 1}"
         current_day_placeholder = st.empty()

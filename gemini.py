@@ -69,10 +69,10 @@ class Gemini:
             }
         
         # Write the parsed trip plan into a JSON file
-        with open("/Users/rajnarayansharma/Desktop/InternShip/Prompt/ModelResponse/gemini_answer.json", "w", encoding="utf-8") as json_file:
-            json.dump(trip_dict, json_file, indent=4, ensure_ascii=False)  # Ensure UTF-8 encoding
-        
-        # Optionally return the trip dictionary
+        file_path = os.path.join(os.getcwd(), "gemini_answer.json")  # This saves in the current working directory
+        with open(file_path, "w", encoding="utf-8") as json_file:
+            json.dump(trip_dict, json_file, indent=4, ensure_ascii=False)
+
         if return_:
             return trip_dict
 
