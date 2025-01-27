@@ -84,7 +84,7 @@ class Gemini:
                 {self.trip_details}
                 In Case the details provided are not enough Tell the user to provide the neccasry details that are missing accoridng to you(can be budget,food preferecne or anything else)
                 Provide a detailed itinerary for each day.
-                (If Possible also provide the Google Maps Link for that Place)
+                (If Possible also provide the Google Maps Link for that Place with this format:https://www.google.com/maps?q=Location+Name)
                 The output should look like below
                 Exclude any prices or costs. Make sure it is utf-8 encoded. I want the output in that format:
                 **Day X:**  -> X is day number
@@ -97,7 +97,7 @@ class Gemini:
             We are interested in a mix of historical sightseeing, cultural experiences, and delicious food,Peacefull places based on {self.preferences}
             Having Food Preference as {self.foodType} and staying at {self.stayLocation}.
             Provide a detailed itinerary for each day.
-            (If Possible also provide the Google Maps Link for that Place)
+            (If Possible also provide the Google Maps Link for that Place with this format:https://www.google.com/maps?q=Location+Name)
             The output should look like below
             Exclude any prices or costs. Make sure it is utf-8 encoded. I want the output in that format:
             **Day X:**  -> X is day number
