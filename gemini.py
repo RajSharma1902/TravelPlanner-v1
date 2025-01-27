@@ -1,8 +1,8 @@
-from dotenv import load_dotenv
-load_dotenv()
 import google.generativeai as genai
 import os
-genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
+import streamlit as st
+gemini_api_key = st.secrets["general"]["GEMINI_API_KEY"]
+genai.configure(api_key=gemini_api_key)
 import json
 import textwrap
 

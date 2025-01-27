@@ -1,16 +1,73 @@
 {
     "Day 1": {
         "Morning": [
-            "*   **Sri Gavi Gangadhareshwara Temple:** Explore this ancient cave temple dedicated to Lord Shiva, known for its unique architecture and serene atmosphere. (1.5 - 2 hours)",
-            "*   **Bugle Rock Park:** Enjoy a peaceful walk amidst the rock formations, lush greenery, and a small lake. It provides a calm start to the day, away from city bustle. (1 hour)"
+            "Old Town District (2-3 hours)",
+            "* Explore the historic cobblestone streets and admire the well-preserved architecture.",
+            "* Visit the central plaza, a hub of local activity.",
+            "* Discover hidden courtyards and quaint shops.",
+            "* [Google Maps Link Placeholder: Replace with actual link]"
         ],
         "Afternoon": [
-            "*   **National Gallery of Modern Art (NGMA):** Immerse yourself in Indian art and culture with a visit to the National Gallery of Modern Art, showcasing modern and contemporary pieces. It's relatively less crowded, especially on weekdays. (2 hours)",
-            "*   **Lunch at a nearby vegetarian restaurant:** Enjoy a traditional South Indian vegetarian meal at a restaurant near the NGMA. Search for small, local places to avoid crowds. (1 hour)"
+            "Grand Museum of History (2-3 hours)",
+            "* Immerse yourself in the local history through exhibits and artifacts.",
+            "* Learn about significant events and figures that shaped the region.",
+            "* Take a break in the museum cafe for a light snack.",
+            "*[Google Maps Link Placeholder: Replace with actual link]"
         ],
         "Evening": [
-            "*   **Lalbagh Botanical Garden:** Visit Lalbagh in the late afternoon/early evening for a leisurely stroll. The vast garden has many hidden paths and quiet spots for reflection and is less crowded in the evening than the morning. (2 hours)",
-            "* **Dinner at a quiet, upscale vegetarian restaurant in South Bangalore:** Have a peaceful dinner at a restaurant offering South Indian or other cuisines with a calm ambiance, close to your hotel. (1-1.5 hours)"
+            "Local Traditional Restaurant and Scenic Lookout (2-3 hours)",
+            "* Experience the local culture with traditional food.",
+            "* Enjoy an authentic meal with local dishes and ingredients.",
+            "* After dinner, head to the scenic lookout point to enjoy a peaceful sunset view.",
+            "*[Google Maps Link Placeholder: Replace with actual link for Restaurant ]",
+            "*[Google Maps Link Placeholder: Replace with actual link for Lookout]"
+        ]
+    },
+    "Day 2": {
+        "Morning": [
+            "Ancient Temple or Ruins (2-3 hours)",
+            "*Explore the ancient ruins and learn about its significance to the culture.",
+            "*Take a walk around the grounds and enjoy the quietness.",
+            "*[Google Maps Link Placeholder: Replace with actual link]"
+        ],
+        "Afternoon": [
+            "Cultural Arts Center (2-3 hours)",
+            "* Discover the works of local artists, crafts, and artisans",
+            "* Take a workshop or learn about local art forms.",
+            "*[Google Maps Link Placeholder: Replace with actual link]"
+        ],
+        "Evening": [
+            "Garden Walk and Peaceful Tea Ceremony (2-3 hours)",
+            "* Take a leisurely stroll through serene gardens or park.",
+            "* Experience a traditional tea ceremony in a calming environment.",
+            "*[Google Maps Link Placeholder: Replace with actual link for Gardens]",
+            "*[Google Maps Link Placeholder: Replace with actual link for Tea Ceremony]"
+        ]
+    },
+    "Day 3": {
+        "Morning": [
+            "Local Market Visit (2-3 hours)",
+            "* Immerse yourself in the local daily life at a bustling marketplace.",
+            "* Explore the stalls, sample local produce and specialties.",
+            "* Interact with the local vendors and find some unique souvenirs.",
+            "*[Google Maps Link Placeholder: Replace with actual link]"
+        ],
+        "Afternoon": [
+            "Peaceful Lakeside or Riverside Area (2-3 hours)",
+            "* Relax by a peaceful lake or river.",
+            "* Take a walk along the water's edge and enjoy the natural surroundings.",
+            "* Read a book or simply enjoy the quiet environment.",
+            "*[Google Maps Link Placeholder: Replace with actual link]"
+        ],
+        "Evening": [
+            "Farewell Dinner at Restaurant with a view (2-3 hours)",
+            "*Enjoy a delicious farewell meal at a restaurant offering panoramic views.",
+            "*Enjoy local cuisine and celebrate the trip.",
+            "*[Google Maps Link Placeholder: Replace with actual link]",
+            "**Note:**",
+            "*  Remember to replace the placeholder names and Google Maps links with your actual desired locations.",
+            "*  Adjust the time allocated to each activity based on your preferences and pace.",
+            "*  This itinerary is a template, feel free to customize it with the specific types of food, activities, and historical sites you are interested in."
         ]
     }
 }
