@@ -111,9 +111,31 @@ def main():
                 current_day_infos.write("Generate a Trip Plan!")
 
         # Button to move to the next day
-        button = st.button("Next Day")
+        colPrev, colNext = st.columns(2)
+        with colPrev:
+            buttonBack = st.button("Previous Day")
+        with colNext:
+            button = st.button("Next Day")
         if button and st.session_state['counter'] < len(response) - 1:
             st.session_state['counter'] += 1
+            current_day = f"Day {st.session_state['counter'] + 1}"
+
+            if current_day in response:
+                current_day_placeholder.markdown(f"### {current_day}")
+
+                # Extract and format the activities for the next day
+                day_data = response[current_day]
+                formatted_info = ""
+                for time_slot, activities in day_data.items():
+                    formatted_info += f"**{time_slot}:**\n"
+                    formatted_info += "\n".join([f"- {activity}" for activity in activities])
+                    formatted_info += "\n\n"
+
+                current_day_infos.markdown(formatted_info)
+            else:
+                current_day_infos.write("No information available for this day.")
+        if buttonBack and st.session_state['counter'] > 0:
+            st.session_state['counter'] -= 1
             current_day = f"Day {st.session_state['counter'] + 1}"
 
             if current_day in response:

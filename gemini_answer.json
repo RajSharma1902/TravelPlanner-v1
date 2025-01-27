@@ -1,20 +1,121 @@
 {
     "Day 1": {
         "Morning": [
-            "*   **Bangalore Palace:** A majestic palace showcasing Tudor-style architecture. (Stay: 2 hours)",
-            "https://www.google.com/maps?q=Bangalore+Palace",
-            "*   **National Gallery of Modern Art (NGMA):**  Explore contemporary and modern Indian art. (Stay: 1.5 hours)",
-            "https://www.google.com/maps?q=National+Gallery+of+Modern+Art+Bangalore"
+            "- Kolkata Airport (Departure formalities, 2 hours)",
+            "- Flight to Tokyo (Narita/Haneda) (Travel time approx 8-10 hours, including layover)"
         ],
         "Afternoon": [
-            "*  **Shree Lakshmi Venkateswara Temple, Uttarahalli:** A serene temple known for its peaceful atmosphere, offering a spiritual and quiet experience.(Stay: 2 hours)",
-            "https://www.google.com/maps?q=Shree+Lakshmi+Venkateswara+Temple+Uttarahalli",
-            "*   **Lunch at a Local Restaurant:** Enjoy a vegetarian South Indian Thali at a reputable, less crowded restaurant in the Uttarahalli area. (Stay: 1 hour)"
+            "- Arrival at Narita/Haneda Airport (Immigration, baggage claim, exchange currency, purchase Japan Rail Pass if needed, 2 hours)",
+            "- Travel to Shinjuku, Tokyo (Check into budget-friendly accommodation, 2 hours) https://www.google.com/maps?q=Shinjuku+Tokyo"
         ],
         "Evening": [
-            "*  **Lalbagh Botanical Garden:** Explore the diverse flora of this large, lush garden. Choose a less crowded section like the bonsai garden or the lake area. (Stay: 2 hours)",
-            "https://www.google.com/maps?q=Lalbagh+Botanical+Garden",
-            "*   **Dinner at a Fine Dining Vegetarian Restaurant:** Enjoy a peaceful dinner in a restaurant with options for North or South Indian vegetarian cuisine. Opt for one slightly away from the city center for less crowd. (Stay: 1.5 hours)"
+            "- Shinjuku Gyoen National Garden (Explore a beautiful landscape garden, 2 hours) https://www.google.com/maps?q=Shinjuku+Gyoen+National+Garden",
+            "- Dinner at a local Izakaya (Enjoy a simple Vegetarian meal, 1.5 hours)",
+            "---"
+        ]
+    },
+    "Day 2": {
+        "Morning": [
+            "- Tokyo Metropolitan Government Building (Enjoy panoramic city views, 1.5 hours) https://www.google.com/maps?q=Tokyo+Metropolitan+Government+Building",
+            "- Meiji Jingu Shrine (Explore a peaceful Shinto shrine, 2 hours) https://www.google.com/maps?q=Meiji+Jingu+Shrine"
+        ],
+        "Afternoon": [
+            "- Harajuku (Wander through trendy Takeshita street, 2 hours) https://www.google.com/maps?q=Harajuku+Tokyo",
+            "- Lunch at a vegetarian-friendly cafe in Harajuku (Enjoy delicious vegan options, 1 hour)"
+        ],
+        "Evening": [
+            "- Shibuya Crossing (Witness the iconic scramble crossing, 1 hour) https://www.google.com/maps?q=Shibuya+Crossing",
+            "- Dinner at a restaurant near Shibuya (Enjoy a veg Japanese curry, 1.5 hours)",
+            "---"
+        ]
+    },
+    "Day 3": {
+        "Morning": [
+            "- Travel to Hakone (Scenic train ride to mountain resort town, 2.5 hours) https://www.google.com/maps?q=Hakone",
+            "- Check into a budget Ryokan (traditional Japanese inn) in Hakone (1 hour)"
+        ],
+        "Afternoon": [
+            "- Hakone Ropeway (Enjoy volcanic hot spring views and panoramic landscapes, 2 hours) https://www.google.com/maps?q=Hakone+Ropeway",
+            "- Lake Ashi Cruise (Take a boat trip on the lake with views of Mount Fuji, 1.5 hours) https://www.google.com/maps?q=Lake+Ashi"
+        ],
+        "Evening": [
+            "- Onsen Experience (Enjoy a traditional Japanese hot spring bath at your Ryokan, 2 hours)",
+            "- Vegetarian Kaiseki Dinner (Savor a multi-course vegetarian meal at the Ryokan, 1.5 hours)",
+            "---"
+        ]
+    },
+    "Day 4": {
+        "Morning": [
+            "- Hakone Open-Air Museum (Explore contemporary sculptures against a mountain backdrop, 2.5 hours) https://www.google.com/maps?q=Hakone+Open-Air+Museum",
+            "- Hakone Venetian Glass Museum (Enjoy art and culture amidst serene nature, 2 hours)  https://www.google.com/maps?q=Hakone+Venetian+Glass+Museum"
+        ],
+        "Afternoon": [
+            "- Travel from Hakone to Takayama (long train journey with scenic views, approx 4-5 hours) https://www.google.com/maps?q=Takayama",
+            "- Check into a budget guesthouse in Takayama (1 hour)"
+        ],
+        "Evening": [
+            "- Stroll through Takayama Old Town (Explore the beautifully preserved Edo-era streets, 2 hours) https://www.google.com/maps?q=Takayama+Old+Town",
+            "- Dinner at a local restaurant (Find a simple vegetarian meal such as ramen or udon, 1.5 hours)",
+            "---"
+        ]
+    },
+    "Day 5": {
+        "Morning": [
+            "- Miyagawa Morning Market (Experience the vibrant local market, 1.5 hours) https://www.google.com/maps?q=Miyagawa+Morning+Market",
+            "- Hida Folk Village (Explore traditional farmhouses and learn about local culture, 2.5 hours) https://www.google.com/maps?q=Hida+Folk+Village"
+        ],
+        "Afternoon": [
+            "- Hike in the mountains surrounding Takayama (Choose a trail based on fitness level, 3 hours)",
+            "- Lunch (Pack snacks and fruits during hiking or get at a nearby eatery, 1 hours)"
+        ],
+        "Evening": [
+            "- Relax at your guesthouse (Enjoy quiet time and soak in the mountain ambiance, 2 hours)",
+            "- Dinner (Enjoy a simple meal at a nearby restaurant, 1.5 hours)",
+            "---"
+        ]
+    },
+    "Day 6": {
+        "Morning": [
+            "- Travel to Matsumoto (Scenic train journey, 2.5 hours) https://www.google.com/maps?q=Matsumoto",
+            "- Check into a budget-friendly accommodation in Matsumoto (1 hour)"
+        ],
+        "Afternoon": [
+            "- Matsumoto Castle (Explore the iconic \"Crow Castle,\" 2.5 hours) https://www.google.com/maps?q=Matsumoto+Castle",
+            "- Lunch at a local restaurant (Try vegetarian soba noodles, 1 hour)"
+        ],
+        "Evening": [
+            "- Nawate Street (Stroll along a charming street with shops and cafes, 2 hours) https://www.google.com/maps?q=Nawate+Street",
+            "- Dinner at a local restaurant (Enjoy simple Japanese rice bowls with vegetarian toppings, 1.5 hours)",
+            "---"
+        ]
+    },
+    "Day 7": {
+        "Morning": [
+            "- Travel from Matsumoto to Tokyo (High speed train journey, approx 3-4 hours)",
+            "- Check into your accommodation in Tokyo near the Airport (1.5 hours)"
+        ],
+        "Afternoon": [
+            "- Explore Ueno Park (Stroll through one of Tokyo's biggest parks, 2.5 hours) https://www.google.com/maps?q=Ueno+Park",
+            "- Tokyo National Museum (Explore Japanese art and history, 2 hours) https://www.google.com/maps?q=Tokyo+National+Museum"
+        ],
+        "Evening": [
+            "- Farewell Dinner (Enjoy final Japanese Vegetarian meal near your accommodation, 2 hours)",
+            "- Packing and rest for the next day.",
+            "---"
+        ]
+    },
+    "Day 8": {
+        "Morning": [
+            "- Narita/Haneda Airport (Travel to airport, check in, 3-4 hours)",
+            "- Flight to Kolkata (Travel time approx 8-10 hours, including layover)"
+        ],
+        "Afternoon": [
+            "- Arrival at Kolkata Airport (Immigration, baggage claim, Travel home, 2-3 hours)"
+        ],
+        "Evening": [
+            "- Reach home",
+            "---",
+            "```"
         ]
     }
 }

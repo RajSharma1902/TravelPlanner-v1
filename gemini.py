@@ -51,10 +51,10 @@ class Gemini:
             day_num = f"Day {i}"
             
             # Split day content into Morning, Afternoon, and Evening parts
-            parts = day.split("*Morning:")
-            morning = parts[1].split("*Afternoon:")[0].strip().split("\n")
-            afternoon = parts[1].split("*Afternoon:")[1].split("*Evening:")[0].strip().split("\n")
-            evening = parts[1].split("*Evening:")[1].strip().split("\n")
+            parts = day.split("alphaMorning:")
+            morning = parts[1].split("alphaAfternoon:")[0].strip().split("\n")
+            afternoon = parts[1].split("alphaAfternoon:")[1].split("alphaEvening:")[0].strip().split("\n")
+            evening = parts[1].split("alphaEvening:")[1].strip().split("\n")
             
             # Clean up and convert to lists
             morning = [item.strip() for item in morning if item.strip()]
@@ -83,27 +83,37 @@ class Gemini:
                 Generate a trip plan using the information provided in The text below:
                 {self.trip_details}
                 In Case the details provided are not enough Tell the user to provide the neccasry details that are missing accoridng to you(can be budget,food preferecne or anything else)
-                Provide a detailed itinerary for each day.
-                (If Possible also provide the Google Maps Link for that Place with this format:https://www.google.com/maps?q=Location+Name)
-                The output should look like below
-                Exclude any prices or costs. Make sure it is utf-8 encoded. I want the output in that format:
-                **Day X:**  -> X is day number
-                *Morning:Name of places with point wise description(Short along with how long to stay there)*
-                *Afternoon:Name of places with point wise description(Short along with how long to stay there)*
-                *Evening:Name of places with point wise description(Short along with how long to stay there)*
+                Provide a detailed itinerary for each day in the **EXACT FORMAT BELOW**:
+                ---
+                **Day X:**  
+                alphaMorning:  
+                - [Place Name] (Brief description, duration to stay)  
+                alphaAfternoon:  
+                - [Place Name] (Brief description, duration to stay)  
+                alphaEvening: 
+                - [Place Name] (Brief description, duration to stay)  
+                ---
+                Provide UTF-8 encoded output with **NO deviations**. Each section (Morning, Afternoon, Evening) must include multiple bullet points. Ensure the structure is strictly followed. If Google Maps links can be added, include them in this format: https://www.google.com/maps?q=Location+Name.
+
+                ---
             """
         else:
-            prompt = f"""Generate a trip plan for {self.location}, {self.budget} spanning {self.days} days for a group of {self.members} with purpose of {self.purpose} and prefers {self.preferences}.
-            We are interested in a mix of historical sightseeing, cultural experiences, and delicious food,Peacefull places based on {self.preferences}
-            Having Food Preference as {self.foodType} and staying at {self.stayLocation}.
-            Provide a detailed itinerary for each day.
-            (If Possible also provide the Google Maps Link for that Place with this format:https://www.google.com/maps?q=Location+Name)
-            The output should look like below
-            Exclude any prices or costs. Make sure it is utf-8 encoded. I want the output in that format:
-            **Day X:**  -> X is day number
-            *Morning:Name of places with point wise description(Short along with how long to stay there)*
-            *Afternoon:Name of places with point wise description(Short along with how long to stay there)*
-            *Evening:Name of places with point wise description(Short along with how long to stay there)*
+            prompt = f"""
+                Generate a trip plan for {self.location}, {self.budget} spanning {self.days} days for a group of {self.members} with the purpose of {self.purpose} and preferences for {self.preferences}.
+                The trip should include a mix of historical sightseeing, cultural experiences, and delicious food, along with peaceful places based on {self.preferences}.
+                Food preference: {self.foodType}, Staying at: {self.stayLocation}.
+                Provide a detailed itinerary for each day in the **EXACT FORMAT BELOW**:
+                ---
+                **Day X:**  
+                alphaMorning:  
+                - [Place Name] (Brief description, duration to stay)  
+                alphaAfternoon:  
+                - [Place Name] (Brief description, duration to stay)  
+                alphaEvening: 
+                - [Place Name] (Brief description, duration to stay)  
+                ---
+                Provide UTF-8 encoded output with **NO deviations**. Each section (Morning, Afternoon, Evening) must include multiple bullet points. Ensure the structure is strictly followed. If Google Maps links can be added, include them in this format: https://www.google.com/maps?q=Location+Name.
+            ---
             """
         response = self.model.generate_content(prompt)
         if response.parts:
