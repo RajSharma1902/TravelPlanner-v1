@@ -50,7 +50,7 @@ def main():
         preferences = st.sidebar.text_input("Preferences", "Less Crowded")
         foodType = st.sidebar.text_input("Food Preference", "Veg")
         stayLocation = st.sidebar.text_input("Where are you staying")
-        geminiModel=st.sidebar.selectbox("Choose Gemini Model:",["gemini-2.0-flash-exp", "gemini-1.5-flash", "gemini-1.5-pro"],index=0)
+        geminiModel=st.sidebar.selectbox("Choose Gemini Model:",["gemini-2.5-flash","gemini-2.5-pro", "gemini-2.5-flash-lite"],index=0)
         if st.sidebar.button("Generate Trip Plan"):
             model = Gemini(location, days, members, budget, purpose, preferences,foodType,stayLocation,geminiModel,None)
             model.get_response(markdown=False)
