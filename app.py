@@ -60,7 +60,7 @@ def main():
     elif input_option == "Text Input":
         # Text input option
         trip_details = st.sidebar.text_area("Enter Trip Details in a short paragraph:")
-        geminiModel=st.sidebar.selectbox("Choose Gemini Model:",["gemini-2.0-flash-exp", "gemini-1.5-flash", "gemini-1.5-pro"],index=0)
+        geminiModel=st.sidebar.selectbox("Choose Gemini Model:",["gemini-2.5-flash","gemini-2.5-pro", "gemini-2.5-flash-lite"],index=0)
         if st.sidebar.button("Generate Trip Plan"):
             # Process the text input and pass it to the model
             # You can implement your logic here to parse the text and extract relevant info
